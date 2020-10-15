@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    background-image: url("backgroud.png");
+    background-size: cover;
+}
+/*Cabeçario*/
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: rgb(189, 189, 189);
+    border-bottom: blue solid 3px;
+    display: flex;
+}
+.navbar img {
+    width: 200px;
+}
+.navbar ul {
+    display: flex;
+    margin: 15px 50px auto auto;
+    list-style: none;
+    float: right;
+}
+.navbar ul li {
+    margin: 5%;
+    font-size: 26px;
+    font-weight: bold;
+}
+.navbar a {
+    text-decoration: none;
+}
+/*Primeira box*/
+.twobox {
+    border: 1px solid black;
+    max-width: 85%;
+    width: 100%;
+    margin: 15px 5%;
+    padding: 8px;
+    border-radius: 5px;
+    background: lightgrey;
+}
+.cardbox {
+    border: 1px black solid;
+    height: auto;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
+    font-size: 26px;
+}
+.cardbox h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.cardbox h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.personagens {
+    display: flex;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+.card {
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.card img {
+    width: 55%;
+    height: 180px;
+    border-radius: 90px;
+}
+.box {
+    width: 45%;
+    display: flex;
+}
