@@ -30,3 +30,25 @@ body {
 .navbar a {
     text-decoration: none;
 }
+/*Conteúdo principal*/
+.cardbox {
+    border: 1px black solid;
+    height: auto;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
+    font-size: 26px;
+}
+.twobox {
+    border: 1px solid black;
+    max-width: 85%;
+    width: 100%;
+    margin: 15px 5%;
+    padding: 8px;
+    border-radius: 5px;
+    background: lightgrey;
+}
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
