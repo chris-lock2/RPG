@@ -1,10 +1,11 @@
 body {
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
-    background-image: url("backgroud.png");
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("https://wallpapercave.com/wp/xqpUrWQ.jpg");
     background-size: cover;
-    
+    background-attachment: fixed;
 }
 /*Cabeçario*/
 .navbar {
@@ -19,7 +20,7 @@ body {
 }
 .navbar ul {
     display: flex;
-    margin: 15px 50px auto auto;
+    margin: 15px 80px auto auto;
     list-style: none;
     float: right;
 }
@@ -31,7 +32,7 @@ body {
 .navbar a {
     text-decoration: none;
 }
-/*Primeira box*/
+/*Corpo do site*/
 .twobox {
     border: 1px solid black;
     max-width: 85%;
@@ -49,12 +50,12 @@ body {
     box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
     font-size: 26px;
 }
-.cardbox h1 {
-    font-size: 36px;
-    font-weight: 700;
-}
 .cardbox h2 {
     font-size: 30px;
+    font-weight: 900;
+}
+.cardbox h3 {
+    font-size: 24px;
     font-weight: 600;
 }
 .personagens {
