@@ -4,6 +4,5 @@ class personagem {
         name,
         image,
         weight,
-        
     )
 }

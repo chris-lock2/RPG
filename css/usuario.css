@@ -58,26 +58,6 @@ body {
     font-size: 24px;
     font-weight: 600;
 }
-.personagens {
-    display: flex;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-}
-.card {
-    border: 1px solid black;
-    width: 90%;
-    text-align: center;
-    height: auto;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-.card img {
-    width: 55%;
-    height: 180px;
-    border-radius: 90px;
-}
 .box {
-    width: 45%;
-    display: flex;
+    width: 80%;
 }

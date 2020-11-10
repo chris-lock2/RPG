@@ -4,7 +4,6 @@ body {
     font-size: 14px;
     background-image: url("backgroud.png");
     background-size: cover;
-    
 }
 /*Cabeçario*/
 .navbar {
@@ -30,6 +29,12 @@ body {
 }
 .navbar a {
     text-decoration: none;
+    transition: 0.3s;
+    color: blue
+}
+.navbar a:hover {
+    transition: 0.3s;
+    color: yellow;
 }
 /*Primeira box*/
 .twobox {
@@ -48,6 +53,7 @@ body {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
     font-size: 26px;
+    margin-top: 7px;
 }
 .cardbox h1 {
     font-size: 36px;
@@ -58,7 +64,6 @@ body {
     font-weight: 600;
 }
 .personagens {
-    display: flex;
     padding: 10px;
     grid-template-columns: 1fr 1fr;
     display: grid;
@@ -75,8 +80,4 @@ body {
     width: 55%;
     height: 180px;
     border-radius: 90px;
-}
-.box {
-    width: 45%;
-    display: flex;
 }

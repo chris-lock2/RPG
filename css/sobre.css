@@ -38,6 +38,7 @@ body {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
     font-size: 26px;
+    padding: 10px;
 }
 .twobox {
     border: 1px solid black;
@@ -51,4 +52,10 @@ body {
 .box {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.foto {
+    margin: 0 0 0 auto;
+}
+.foto img {
+    width: 400px;
 }
