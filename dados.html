@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dados.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <title>Dados</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="./css/logo.png" alt="logo">
+        <ul>
+            <li><a href="#">Layout</a></li>
+            <li><a href="#">Personagens</a></li>
+            <li><a href="#">Livros</a></li>
+        </ul>
+    </div>
+    <div class="twobox">
+        <div class="cardbox">
+            <h3>Gerador de dados</h3>
+            <div>
+                <button onclick="gerarQuatro()">
+                    D4
+                </button>
+                <button onclick="gerarSeis()">
+                    D6
+                </button>
+                <button onclick="gerarOito()">
+                    D8
+                </button>
+                <button onclick="gerarDez()">
+                    D10
+                </button>
+                <button onclick="gerarDoze()">
+                    D12
+                </button>
+                <button onclick="gerarVinte()">
+                    D20
+                </button>
+                <button onclick="gerarCem()">
+                    D100
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="twobox" id="twobox">
+        <div class="cardbox">
+            <div id="divResultado">-</div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function gerarQuatro() {
+        var r = parseInt(Math.random() * 4 + 1);
+        divResultado.innerHTML = `${r}`;
+    }
+    function gerarSeis() {
+        var r = parseInt(Math.random() * 6 + 1);
+        divResultado.innerHTML = `${r}`;
+    }
+    function gerarOito() {
+        var r = parseInt(Math.random() * 8 + 1);
+        divResultado.innerHTML = `${r}`;
+    }
+    function gerarDez() {
+        var r = parseInt(Math.random() * 10 + 1);
+        divResultado.innerHTML = `${r}`;
+    }
+    function gerarDoze() {
+        var r = parseInt(Math.random() * 12 + 1);
+        divResultado.innerHTML = `${r}`;
+    }
+    function gerarVinte() {
+        var r = parseInt(Math.random() * 20 + 1);
+        divResultado.innerHTML = `${r}`;
+    }
+    function gerarCem() {
+        var r = parseInt(Math.random() * 100 + 1);
+        divResultado.innerHTML = `${r}`;
+    }
+</script>

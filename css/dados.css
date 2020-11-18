@@ -12,25 +12,40 @@ body {
     border: 1px solid black;
     max-width: 85%;
     width: 100%;
-    margin: 15px 5%;
+    margin: 15px 7.5%;
     padding: 8px;
     border-radius: 5px;
     background: lightgrey;
 }
-.box {
+.cardbox {
     border: 1px black solid;
     height: auto;
     font-size: 18px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
     font-size: 26px;
-    margin-top: 7px;
+    text-align: center;
+    padding: 10px;
 }
-.classes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 5px;
+#twobox {
+    width: 25%;
+    margin: auto 37.5% auto 37.5%;
 }
-.classes p {
-    border-right: 1px solid black;
+.cardbox button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.4s;
+    background-color: lightblue;
+    outline: none;
+}
+.cardbox button:hover {
+    transition: 0.4s;
+    background-color: rgba(4, 4, 153, 0.856);
+    color: white;
+}
+#divResultado {
+    font-size: 40px;
+    font-weight: 800;
 }
