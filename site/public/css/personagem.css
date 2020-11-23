@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("https://wallpapercave.com/wp/xqpUrWQ.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Corpo*/
+.twobox {
+    border: 1px solid black;
+    max-width: 85%;
+    width: 100%;
+    margin: 15px 5%;
+    padding: 8px;
+    border-radius: 5px;
+    background: lightgrey;
+}
+.box {
+    border: 1px black solid;
+    height: auto;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
+    font-size: 26px;
+    margin-top: 7px;
+}
+.classes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+}
+.classes p {
+    border-right: 1px solid black;
+}
