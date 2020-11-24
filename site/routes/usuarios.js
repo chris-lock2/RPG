@@ -9,7 +9,7 @@ let sessoes = [];
 router.post('/autenticar', function(req, res, next) {
 	console.log('Recuperando usuário por login e senha');
 
-	var login = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
+	var nick = req.body.nick; // depois de .body, use o nome (name) do campo em seu formulário de login
 	var senha = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
 	
 	let instrucaoSql = `select * from usuario where nick='${nick}' and senha='${senha}'`;
@@ -55,13 +55,13 @@ router.post('/cadastrar', function(req, res, next) {
 
 
 /* Verificação de usuário */
-router.get('/sessao/:login', function(req, res, next) {
-	let login = req.params.login;
+router.get('/sessao/:nick', function(req, res, next) {
+	let nick = req.params.nick;
 	console.log(`Verificando se o usuário ${nick} tem sessão`);
 	
 	let tem_sessao = false;
 	for (let u=0; u<sessoes.length; u++) {
-		if (sessoes[u] == login) {
+		if (sessoes[u] == nick) {
 			tem_sessao = true;
 			break;
 		}
