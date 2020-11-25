@@ -25,6 +25,8 @@ body {
     box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
     font-size: 26px;
     margin-top: 7px;
+    text-align: center;
+    padding: 10px;
 }
 .classes {
     display: grid;
@@ -33,4 +35,13 @@ body {
 }
 .classes p {
     border-right: 1px solid black;
+}
+.box img {
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.box img:hover {
+    transition: 0.5s;
+    width: 500px;
 }

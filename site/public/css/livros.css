@@ -7,43 +7,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-/*Banner*/
-.container { 
-  width: 80%;
-  margin: auto;
-}
-.container h1 {
-  margin: 0;
-  padding: 0;
-}
-.container a {
-  text-decoration: none;
-}
-.banner {
-  height: 400px;
-  width: 85%;
-  background: url(../css/wallpaper-banner.png);
-  background-size: cover;
-  margin: 5px auto;
-  border: 2px solid white;
-  border-radius: 5px;
-}
-.container {
-  height: 400px;
-}
-.container h1{
-  font-size: 58px;
-  color: orangered;
-  text-align: center;
-  padding-top: 150px;
-}
-.container h3 {
-  color: white;
-  text-align: center;
-  font-size: 38px;
-  margin: 0;
-}
-/*corpo*/
+/*Corpo*/
 .twobox {
   border: 1px solid black;
   max-width: 85%;
@@ -61,7 +25,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.308) 2px 2px 3px 3px;
   font-size: 26px;
   padding: 10px;
-  display: flex;
 }
 .cardbox ul {
   list-style: none;
@@ -80,12 +43,4 @@ body {
 .cardbox h1 {
   font-size: 36px;
   font-weight: 700;
-}
-.box {
-  width: 50%;
-}
-.box img {
-  margin: 0 auto 0 auto;
-  width: 100%;
-  height: auto;
 }
