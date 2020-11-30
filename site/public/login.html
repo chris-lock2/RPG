@@ -37,6 +37,7 @@
                 <div class="extra">
                         <div id="div_erro" class="msg_erro"></div>
                 </div>
+                <img src="./css/gif-carregando.gif" style="display: none; width: 100px;" id="img_aguarde">
             </div>
         </div>
             <div class="box">
@@ -52,7 +53,7 @@
                         
                         <button type="submit" id="btn_entrar" value="Cadastrar" class="btn">Cadastrar</button>
                     </form>
-                    <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
+                    <div id="div_erro2" style="background-color: #bf8899; color: maroon; display: none;">
                         Erro no cadastro
                     </div>
                 </div>
@@ -78,6 +79,7 @@
                 resposta.text().then(texto => {
                     console.error(texto);
                 });
+                finalizar_aguardar();
             }
         });
         return false;
@@ -108,11 +110,16 @@
     }
     function aguardar() {
         btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
         div_erro.style.visibility = 'hidden';
+        div_erro2.style.visibility = 'hidden';
     }
     function finalizar_aguardar(resposta) {
         btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
         div_erro.style.visibility = 'visible';
         div_erro.innerHTML = resposta;
+        div_erro2.style.visibility = 'visible';
+        div_erro2.innerHTML = resposta;
     }
 </script>
