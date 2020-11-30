@@ -7,12 +7,13 @@
 }
 .navbar img {
     width: 200px;
+    float: right;
 }
 .navbar ul {
     display: flex;
-    margin: 15px 150px auto auto;
+    margin: 15px 5% auto auto;
     list-style: none;
-    float: right;
+    float: left;
 }
 .navbar ul li {
     margin: 5%;
@@ -27,4 +28,45 @@
 .navbar a:hover {
     transition: 0.3s;
     color: yellow;
+}
+/*SideBar*/
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.sidebar {
+    height: 400px;
+    width: 0;
+    background: rgb(189, 189, 189);
+    border-bottom: blue solid 3px;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+.sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+    color: blue;
+    display: block;
+}
+.sidebar a:hover {
+    transition: 0.3s;
+    color: yellow;
+}
+.sidebar .closebtn {
+    font-size: 37px;
+    margin-left: 80%;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin: 5%;
+    font-size: 26px;
+    font-weight: bold;
 }

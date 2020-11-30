@@ -8,17 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Regas</title>
 </head>
-<body>
-    <div class="navbar">
-        <img src="./css/logo.png" alt="logo">
+<body onload="verificar_autenticacao()">
+    <div class="sidebar" id="mySidebar">
         <ul>
+            <a href="#" class="closebtn" onclick="closeNav()">x</a>
             <li><a href="layout.html">Layout</a></li>
             <li><a href="personagem.html">Personagens</a></li>
             <li><a href="livros.html">Livros</a></li>
             <li><a href="dados.html">Dados</a></li>
-            <li><a href="regra.html"></a></li>
-            <li>Olá, <b id="b_usuario"></b></li>
-            <li><a href="" onclick="logoff()">LOGOUT</a></li>
+            <li><a href="regra.html">Regras</a></li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <a class="openbtn" onclick="openNav()">☰</a>
+        <ul>
+            <li><a href="#" onclick="logoff()">Logout</a></li>
         </ul>
     </div>
     <div class="twobox">
@@ -90,3 +94,5 @@
     </div>
 </body>
 </html>
+<script src="./js/function.js"></script>
+<script src="./js/navbar.js"></script>
